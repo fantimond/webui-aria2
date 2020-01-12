@@ -9,7 +9,7 @@ angular
   port: 6800,
   encrypt: false,
   auth: {                          // either add the token field or the user and pass field, not both.
-  // token: '$YOUR_SECRET_TOKEN$'
+  token: '4d55adccfe07425abefb36aa95564d9c'
   /*-----------------------------*/
   // user: '*YOUR_USERNAME*',
   // pass: '*YOUR_SECRET_PASS*'
@@ -34,7 +34,7 @@ angular
 })
 .constant('$starredProps', [   // default list of Quick Access Properties. Can be overridden by making modification through the Global Settings dialog
   // go to Global Settings dialog to see their description
-  'dir', 'conf-path', 'auto-file-renaming', 'max-connection-per-server'
+	'dir', 'conf-path', 'auto-file-renaming', 'max-connection-per-server', 'user-agent', 'http-proxy', 'timeout', 'retry-wait', 'max-tries'
 ])
 .constant('$downloadProps', [ // Similar to starred Quick Access properties but for adding new downloads.
   // go to Advance Download Options when adding a new download to view the list of possible options
